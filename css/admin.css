@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FCFAEF;
+}
+
+.container {
+    max-width: 900px;
+    margin: 110px auto 40px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #A63636;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #f0d5d5;
+}
+
+th {
+    background-color: #D3504A;
+    color: #E2E0A5;
+}
+
+tr:hover {
+    background-color: #fff5f5;
+}
+
+.btn-add {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #D3504A;
+    color: #E2E0A5;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn-add:hover { background-color: #A63636; }
+
+.btn-edit {
+    padding: 5px 12px;
+    background-color: #D3504A;
+    color: #E2E0A5;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.btn-edit:hover { background-color: #A63636; }
+
+.btn-delete {
+    padding: 5px 12px;
+    background-color: #8B0000;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.btn-delete:hover { background-color: #600000; }
+
+/* Form styles */
+.form-container {
+    max-width: 500px;
+}
+
+.form-container label {
+    display: block;
+    color: #A63636;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #D3504A;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+    outline: none;
+    border-color: #A63636;
+}
+
+.btn-submit {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #D3504A;
+    color: #E2E0A5;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn-submit:hover { background-color: #A63636; }
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-back:hover { background-color: #aaa; }
+
+.msg {
+    color: #A63636;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #D3504A;
+    border-radius: 5px;
+}

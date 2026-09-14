@@ -1,0 +1,35 @@
+header {
+    background-color: #D3504A;
+    color: #E2E0A5;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+h1 {
+    
+    font-family: 'Comic Sans MS', cursive;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+nav {
+    background-color: #A63636;
+    padding: 10px;
+    text-align: right;
+    width:85%;
+    margin-left: auto
+}
+nav a {
+    color: #E2E0A5;
+    text-decoration: none;
+    margin-right: 20px;
+}
