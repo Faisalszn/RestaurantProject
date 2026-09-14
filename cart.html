@@ -1,0 +1,40 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/Template.css">
+    <link rel="stylesheet" href="css/cart.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Restaurant</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart</a>
+            <a href="me.html">About Me</a>
+            <a href="admin.php">Admin</a>
+        </nav>
+    </header>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price (SAR)</th>
+                </tr>
+            </thead>
+            <tbody id="cartItems">
+            </tbody>
+        </table>
+        <div class="total" id="total"></div>
+        <button class="btn" onclick="printCart()">Print and Reset</button> 
+    </div>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>

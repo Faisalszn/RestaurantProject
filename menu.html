@@ -1,0 +1,35 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="css/Template.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <header>
+        <h1>Restaurant</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="cart.html">Cart</a>
+            <a href="me.html">About Me</a>
+            <a href="admin.php">Admin</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <select id="menu">
+            <option value="" selected disabled>Choose a section</option>
+            <option value="appetizers">Appetizers</option>
+            <option value="main-course">Main Course</option>
+            <option value="dessert">Dessert</option>
+            <option value="drinks">Drinks</option>
+        </select>
+        <div id="menuItems"></div>
+    </div>
+
+    <script src="js/menu.js"></script>
+</body>
+</html>
