@@ -1,61 +1,63 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FCFAEF;
-}
 .wrapper {
     display: flex;
-    justify-content: space-between;
-    margin: 110px auto 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: calc(var(--header-height) + 24px) auto 40px;
     max-width: 1200px;
     padding: 0 20px;
     gap: 20px;
 }
 
 .container {
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    background-color: var(--color-surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     text-align: center;
-    flex: 0 0 30%;
+    flex: 1 1 280px;
+    max-width: 340px;
+    transition: transform var(--transition), box-shadow var(--transition);
 }
 
-
-.heading {
-    font-family: 'Courier New', Courier, monospace;
-    color: #A63636;
-    margin-bottom: 20px;
+.container:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
 }
+
 .info-label {
-    font-family: 'Comic Sans MS', cursive;
-    color: #D3504A;
-    font-weight: bold;
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0 0 6px;
 }
+
 .info-value {
-    font-family: 'Arial Black', sans-serif;
-    color: #A63636;
-    margin-bottom: 10px;
+    color: var(--color-text);
+    margin-bottom: 8px;
 }
+
 .contact-link {
     display: inline-block;
-    color: #E2E0A5;
-    background-color: #D3504A;
+    color: var(--color-accent);
+    background-color: var(--color-primary);
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 16px;
     font-weight: bold;
+    transition: background-color var(--transition);
 }
+
 .contact-link:hover {
-    background-color: #A63636;
+    background-color: var(--color-primary-dark);
 }
+
 .section {
     text-align: left;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 2px solid #D3504A;
-    border-radius: 5px;
+    margin-bottom: 16px;
+    padding: 12px;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-sm);
 }

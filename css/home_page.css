@@ -1,26 +1,59 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FCFAEF;
+.container {
+    max-width: 900px;
+    margin: calc(var(--header-height) + 24px) auto 40px;
+    padding: 0 20px 40px;
+    text-align: center;
 }
 
-.container {
-    max-width: 800px;
-    margin: 110px auto;
-    padding: 20px;
-    background-color: #FFF;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    color: #A63636;
-    font-weight: bold;
+.container img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 28px;
 }
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 20px;
+
+.container p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--color-text);
+    max-width: 650px;
+    margin: 0 auto 28px;
 }
-p {
-    line-height: 1.6;
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-actions a {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.hero-actions a:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+.hero-actions .btn-primary {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+}
+
+.hero-actions .btn-primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.hero-actions .btn-secondary {
+    background-color: var(--color-surface);
+    color: var(--color-primary-dark);
+    border: 2px solid var(--color-primary);
 }

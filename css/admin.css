@@ -1,22 +1,26 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FCFAEF;
-}
-
 .container {
     max-width: 900px;
-    margin: 110px auto 40px;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    margin: calc(var(--header-height) + 24px) auto 40px;
+    padding: 28px;
+    background-color: var(--color-surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
 }
 
 h2 {
-    color: #A63636;
+    color: var(--color-primary-dark);
+    margin-bottom: 8px;
+}
+
+.admin-meta {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
     margin-bottom: 20px;
+}
+
+.admin-meta a {
+    color: var(--color-primary-dark);
+    font-weight: 600;
 }
 
 table {
@@ -32,46 +36,52 @@ th, td {
 }
 
 th {
-    background-color: #D3504A;
-    color: #E2E0A5;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
 }
 
-tr:hover {
+th:first-child { border-top-left-radius: var(--radius-sm); }
+th:last-child { border-top-right-radius: var(--radius-sm); }
+
+tr:hover td {
     background-color: #fff5f5;
 }
 
 .btn-add {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #D3504A;
-    color: #E2E0A5;
-    border-radius: 5px;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+    border-radius: var(--radius-sm);
     text-decoration: none;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    transition: background-color var(--transition);
 }
 
-.btn-add:hover { background-color: #A63636; }
+.btn-add:hover { background-color: var(--color-primary-dark); }
 
 .btn-edit {
-    padding: 5px 12px;
-    background-color: #D3504A;
-    color: #E2E0A5;
-    border-radius: 4px;
+    padding: 6px 12px;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+    border-radius: var(--radius-sm);
     text-decoration: none;
     font-size: 13px;
     margin-right: 5px;
+    transition: background-color var(--transition);
 }
 
-.btn-edit:hover { background-color: #A63636; }
+.btn-edit:hover { background-color: var(--color-primary-dark); }
 
 .btn-delete {
-    padding: 5px 12px;
+    padding: 6px 12px;
     background-color: #8B0000;
     color: #fff;
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
     text-decoration: none;
     font-size: 13px;
+    transition: background-color var(--transition);
 }
 
 .btn-delete:hover { background-color: #600000; }
@@ -83,7 +93,7 @@ tr:hover {
 
 .form-container label {
     display: block;
-    color: #A63636;
+    color: var(--color-primary-dark);
     font-weight: bold;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -93,49 +103,52 @@ tr:hover {
 .form-container select {
     width: 100%;
     padding: 10px;
-    border: 2px solid #D3504A;
-    border-radius: 5px;
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-sm);
     box-sizing: border-box;
     font-size: 15px;
+    font-family: inherit;
 }
 
 .form-container input:focus,
 .form-container select:focus {
     outline: none;
-    border-color: #A63636;
+    border-color: var(--color-primary-dark);
 }
 
 .btn-submit {
     margin-top: 20px;
     padding: 10px 25px;
-    background-color: #D3504A;
-    color: #E2E0A5;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
     border: none;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     margin-right: 10px;
+    transition: background-color var(--transition);
 }
 
-.btn-submit:hover { background-color: #A63636; }
+.btn-submit:hover { background-color: var(--color-primary-dark); }
 
 .btn-back {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ccc;
     color: #333;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     text-decoration: none;
     font-weight: bold;
+    transition: background-color var(--transition);
 }
 
 .btn-back:hover { background-color: #aaa; }
 
 .msg {
-    color: #A63636;
+    color: var(--color-primary-dark);
     font-weight: bold;
     padding: 10px;
-    border: 1px solid #D3504A;
-    border-radius: 5px;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-sm);
 }

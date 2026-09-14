@@ -1,55 +1,89 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #FCFAEF;
-}
-
 .container {
     max-width: 800px;
-    margin: 110px auto;
-    padding: 20px;
-    background-color: #fff;
-    color: #A63636;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    margin: calc(var(--header-height) + 24px) auto 40px;
+    padding: 24px;
+    background-color: var(--color-surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-    text-align: center; /* Center align all table content */
 }
+
 th, td {
-    padding: 10px;
-    
-    text-align: center; /* Center align all table content */
+    padding: 12px 10px;
+    text-align: center;
 }
+
 th {
-    padding: 10px;
-    
-    text-align: center; /* Center align table headers */
+    color: var(--color-primary-dark);
+    border-bottom: 2px solid var(--color-primary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
+
 td {
-    padding: 10px;
-    
-    text-align: center; /* Center align table data */
+    border-bottom: 1px solid #f0d5d5;
 }
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.remove-btn {
+    background: none;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary-dark);
+    border-radius: var(--radius-sm);
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.remove-btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+}
+
 .total {
     font-size: 20px;
     font-weight: bold;
+    text-align: right;
+    color: var(--color-primary-dark);
 }
+
+.empty-cart {
+    text-align: center;
+    color: var(--color-text-muted);
+    padding: 30px 0;
+}
+
+.cart-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 16px;
+}
+
 .back, .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #D3504A;
-    color: #E2E0A5;
-    border-radius: 5px;
+    padding: 10px 22px;
+    background-color: var(--color-primary);
+    color: var(--color-accent);
+    border-radius: var(--radius-sm);
     font-weight: bold;
     cursor: pointer;
+    border: none;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color var(--transition);
 }
+
 .back:hover, .btn:hover {
-    background-color: #A63636;
+    background-color: var(--color-primary-dark);
 }
